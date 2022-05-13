@@ -46,6 +46,8 @@ ln –s f1 /d/f3
 ``
 #### Solution 01
 
+a) 
+
 Each block pointer can accommodate:
 2 KiB * 1024B / 1KiB * 1 address/ 4B = 512 indirect data blocks address
 The first 10 simple pointers will point to the first 20 KiB of the file (each block is 2 KiB).
@@ -61,6 +63,8 @@ The size in data blocks of the file is: 4500𝐾𝑖𝐵2𝐾𝑖𝐵 = 2250 Blo
 Then the total size is 2256 blocks plus the i-node.
 
 ![inode](http://4.bp.blogspot.com/-VtVFtgJ-8xE/Vbw7OfVWmAI/AAAAAAAAAfM/Ih7m6ixJ928/s1600/sgg-inode.gif)
+
+b)
 
 create physical link /d/f2 to file f1
 ````
