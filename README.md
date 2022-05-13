@@ -12,7 +12,8 @@
 
 There is a disk with a UNIX file system. 
 Assuming that the size of the block chosen for the file system is 2KBytes, that the addresses of the blocks are 4 bytes and the inodes have the traditional structure (10 direct pointers, 1 simple indirect, 1 double indirect and 1 triple indirect) 
-Find the number of blocks that a 4500 KByte file occupies, including both data and address blocks.
+
+a) Find the number of blocks that a 4500 KByte file occupies, including both data and address blocks.
 
 If the previous Unix file system has the following information:
 
@@ -35,7 +36,7 @@ Data blocks
 |           |      |      |           |   |   |
 |           |      |      |           |   |   |
 
-Modify the previous tables to reflect the execution of the following 2 operations:
+b) Modify the previous tables to reflect the execution of the following 2 operations:
 
 ``
 ln f1 /d/f2
@@ -62,13 +63,13 @@ File attributes:
 - Link counter (1 byte).
 - 4 indirect pointers, 4 simple indirect pointers., 4 double indirect pointers.
 
-Answer the following questions
+Answer the following questions:
+
 a) What is the maximum size of a File stored on this disk? Reason for the answer.
+
 b) If the objective is to minimize access to disk blocks, what parameter do you think the administrator should increase / decrease to achieve this purpose?
-c) Assuming that the Files system is capable of using hard and symbolic links.
 
-Calculate:
-
+c) Assuming that the Files system is capable of using hard and symbolic links. Calculate: 
 Maximum number of hard links (in addition to the initial name) that can be made from a File on this disk.
 
 ###  Exercise 03
